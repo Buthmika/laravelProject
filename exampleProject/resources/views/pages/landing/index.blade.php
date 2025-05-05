@@ -1,14 +1,14 @@
 @extends('layout.app')
 @section('content')
 <div class="container">
-    <div class="form">
+    <form class="form">
         <div class="task">
             <input type="text" class="form-control" placeholder="Add a new task">
         </div>
         <div class="submitButton">
             <button type="submit" class="btn btn-primary">Add Task</button>
         </div>
-    </div>
+    </form>
 </div>
 
 @endsection
