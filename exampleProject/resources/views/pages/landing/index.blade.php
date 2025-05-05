@@ -1,7 +1,12 @@
 @extends('layout.app')
 @section('content')
 <div class="container">
-    <form class="form">
+    <div class="text-success">
+        <h1>To Do List</h1>
+    </div>
+    <form class="form" action="{{ route('landing.store') }}" method="POST">
+        @csrf
+
         <div class="task">
             <input type="text" class="form-control" placeholder="Add a new task">
         </div>
@@ -20,8 +25,13 @@
        .form{
         display: flex;
         gap: 30px;
-        padding-top: 200px;
+        padding-top: 100px;
         padding-left: 180px;
+       }
+       .text-success{
+        align-items: center;
+        padding-left:430px;
+        margin-top: 100px    ;
        }
 
     </style>
