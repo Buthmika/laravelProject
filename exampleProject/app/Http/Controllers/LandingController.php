@@ -14,10 +14,12 @@ class LandingController extends Controller
     }
     public function index()
     {
-        return view('pages.landing.index');
+        $response['tasks'] = $this->task->all();
+        return view('pages.landing.index')-> with($response);
     }
     public function store(Request $request){
         $this->task->create($request->all());
+        return redirect()->back()->with('success','Task Created Successfully');
     }
 
 
