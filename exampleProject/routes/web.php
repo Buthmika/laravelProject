@@ -8,6 +8,7 @@ Route::get('/',[HomePageController::class,'index'])->name('home');
 Route::prefix('/landing')->group (function() {
     Route::get('/',[LandingController::class,'index'])->name('landing');
     Route::post('/store',[LandingController::class,'store'])->name('landing.store');
+    Route::get('/{task_id}/delete',[LandingController::class,'delete'])->name('landing.delete');
 
 
 });
