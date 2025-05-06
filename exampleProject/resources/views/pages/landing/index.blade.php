@@ -25,13 +25,17 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              
+                @foreach ($tasks as $key=> $task)
+                <tr>
+                    <th scope="row">{{ $key++ }}</th>
+                    <td>{{ $task->title }}</td>
+                    <td>{{ $task->Done }}</td>
+                    <td></td>
+                  </tr>
+
+                @endforeach
+
+
             </tbody>
           </table>
     </div>
