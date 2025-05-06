@@ -31,10 +31,10 @@
                     <td>{{ $task->title }}</td>
                     <td>
                         @if ($task->Done==0)
-                        <span>Not Completed</span>
+                        <span class="badge bg-warning">Not Completed</span>
 
                         @else
-                        <span> Completed</span>
+                        <span class="badge bg-warning"> Completed</span>
 
                         @endif
                     </td>
