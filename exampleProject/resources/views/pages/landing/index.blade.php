@@ -27,7 +27,7 @@
             <tbody>
                 @foreach ($tasks as $key=> $task)
                 <tr>
-                    <th scope="row">{{ $key++ }}</th>
+                    <th scope="row">{{ ++$key }}</th>
                     <td>{{ $task->title }}</td>
                     <td>{{ $task->Done }}</td>
                     <td></td>
