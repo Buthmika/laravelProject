@@ -29,7 +29,15 @@
                 <tr>
                     <th scope="row">{{ ++$key }}</th>
                     <td>{{ $task->title }}</td>
-                    <td>{{ $task->Done }}</td>
+                    <td>
+                        @if ($task->Done==0)
+                        <span>Not Completed</span>
+
+                        @else
+                        <span> Completed</span>
+
+                        @endif
+                    </td>
                     <td></td>
                   </tr>
 
