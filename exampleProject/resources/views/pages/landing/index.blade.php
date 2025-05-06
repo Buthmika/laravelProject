@@ -8,7 +8,7 @@
         @csrf
 
         <div class="task">
-            <input type="text" class="form-control" placeholder="Add a new task">
+            <input type="text" class="form-control" placeholder="Add a new task" name="title" required>
         </div>
         <div class="submitButton">
             <button type="submit" class="btn btn-primary">Add Task</button>
