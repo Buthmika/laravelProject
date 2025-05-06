@@ -38,7 +38,9 @@
 
                         @endif
                     </td>
-                    <td></td>
+                    <td>
+                        <a href="{{ route('landing.delete',$task->id) }}" class="btn btn-danger"></a>
+                    </td>
                   </tr>
 
                 @endforeach
